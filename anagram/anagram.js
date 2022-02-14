@@ -8,10 +8,10 @@ function isAnagram(str1, str2) {
         .replace(/\s/g, '')
         .split('')
         .sort((a,b) => { a - b })
-        .join('');
-    console.log(secondWord)
+        .join('');  
 
     if(firstWord === secondWord) return true;
+    return false;
 }
 
 console.log(isAnagram('Dormitory', 'Dirty room')); 
