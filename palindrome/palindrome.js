@@ -13,5 +13,6 @@ function isPalindrome(str) {
     return false;
 }
 
-console.log(isPalindrome('level'));
-console.log(isPalindrome('Borrow or rob'));
+module.exports = {
+    isPalindrome
+}
