@@ -1,17 +1,21 @@
 function isAnagram(str1, str2) {
-    const firstWord = str1.toLowerCase()
-        .replace(/\s/g, '')
+    if(typeof(str1) !== 'string' && typeof(str2) !== 'string') return false;
+
+    const firstWord = str2.replace(/\s/g, '')
+        .toLowerCase()        
         .split('')
-        .sort((a,b) => { a - b })
+        .sort()
         .join('');
-    const secondWord = str1.toLowerCase()
-        .replace(/\s/g, '')
+    const secondWord = str1.replace(/\s/g, '')
+        .toLowerCase()
         .split('')
-        .sort((a,b) => { a - b })
+        .sort()
         .join('');  
 
-    if(firstWord === secondWord) return true;
-    return false;
+    if(firstWord !== secondWord) return false;
+    return true;
 }
 
-console.log(isAnagram('Dormitory', 'Dirty room')); 
+module.exports = {
+    isAnagram
+}
