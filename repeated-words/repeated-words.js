@@ -1,5 +1,5 @@
 function repeatedWords(listUpTo, arr) {
-    if(typeof(listUpTo) !== 'number' && typeof(arr) !== 'array') return 'The first values should be a number and second an array';
+    if(typeof(listUpTo) !== 'number' || typeof(arr) !== 'array') throw new Error('The first values should be a number and second an array');
 
     const citiesCount = {};    
     arr.forEach(city => {
@@ -23,6 +23,8 @@ function repeatedWords(listUpTo, arr) {
     return listCities;
 }
 
+module.exports = { repeatedWords };
+
 const cities = [
     'Grenada',    
     'Haiti',
@@ -43,4 +45,6 @@ const cities = [
     'United States',
 ];
 
-console.log(repeatedWords(5, cities));
+const result = repeatedWords('5', 'cities');
+
+console.log(typeof(result))
