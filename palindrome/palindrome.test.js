@@ -1,7 +1,7 @@
 const { isPalindrome } = require('./palindrome');
 
 describe('Test of anagram', () => {
-    test('should be two arguments string', () => {
+    test('should be one argument string', () => {
         const result = isPalindrome(1);
         
         expect(result).toBe(false);
