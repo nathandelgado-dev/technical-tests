@@ -15,4 +15,5 @@ The function receives an array of tasks, and should return the number of unique 
 `3`
 ### Explanation
 If we have tasks with duration 5, 3, 5, 2 y 5.
+
 `5, 2, 3 are the different elements`
