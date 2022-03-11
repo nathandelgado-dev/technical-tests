@@ -6,7 +6,7 @@ Those interested in the application want to make a small simulator that allows k
 Given a number N, you must return an integer indicating the number of days required to solve it.
 
 ## Funtion description
-The function receives an array of debts, and should return an array representing the number of days needed to pay each debt.
+The function receives an array of debts, and should return an array representing the number of days needed to pay each debt. If not receives an array and this is empty you should return false.
 
 ## Example Case
 ### Input
